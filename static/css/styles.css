@@ -25,6 +25,13 @@ body {
 .ogd {
     font-size: 1.5rem !important;
     line-height: 2;
+    padding: 10px;
+}
+.fl_left {
+    line-height: 1 !important;
+}
+.ogd, .ogd * {
+    text-align: center;
 }
 #footer {
     padding: 40px !important;
@@ -78,7 +85,12 @@ main {
     font-size: 40px;
 }
 .btn {
+    vertical-align: middle !important;
     border-radius: 5px !important;
+}
+.center-gr {
+    display: grid !important;
+    place-content: center !important;
 }
 .dcontent {
     left: 0px !important;
@@ -202,11 +214,12 @@ main {
 
 @media screen and (max-width: 1000px) {
     .centermain, #all_services {
-        display: block;
-        flex-wrap: nowrap;
+        display: block !important;
+        flex-wrap: nowrap !important;
         /* gap: unset; */
     }
     .featured, #services-container {
+        border: none;
         width: 100%;
     }
     .service_a, .service_f {
