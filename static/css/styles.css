@@ -1,0 +1,224 @@
+:root {
+    --mainColor: #00ADEF;
+    --color: #303030;
+}
+::selection {
+    background-color: var(--mainColor) !important;
+}
+
+body, * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    /* background-color: rgb(226, 218, 218) !important; */
+    background-color: var(--mainColor) !important;
+    margin: 0;
+    direction: rtl;
+    overflow-x: hidden;
+    color: var(--color) !important;
+    /* overflow-y: auto; */
+}
+.row5, .row4 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.ogd {
+    font-size: 1.5rem !important;
+    line-height: 2;
+}
+#footer {
+    padding: 40px !important;
+}
+#footer input, #footer textarea {
+    background-color: unset !important;
+    border: 1px solid rgb(187, 186, 186) !important;
+}
+.faico * {
+    border-radius: 3px !important;
+}
+#pageintro li article {
+    max-width: 100% !important;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.4);
+    padding-top: 5%;
+    height: 60vh !important;
+    width: 100vw !important;
+}
+#pageintro li article a {
+    margin-top: 15px;
+    border: 1px solid var(--mainColor);
+}
+main {
+    width: 100%;
+    margin: auto;
+}
+#pageintro {
+    max-width: 1000px;
+    margin: auto;
+}
+.btmspace-15, .btmspace-15::placeholder {
+    color: whitesmoke !important;
+}
+.btmspace-15 {
+    padding: 10px !important;
+    border: 1px solid var(--mainColor) !important;
+}
+#toTop {
+    background-color: var(--mainColor) !important; 
+}
+.row5 .clear {
+    width: 100%;
+    max-width: 90%;
+    border-top: 1px solid whitesmoke;
+    padding: 30px;
+}
+.row5 .clear p {
+    width: 100%;
+    text-align: center !important;
+    font-size: 40px;
+}
+.btn {
+    border-radius: 5px !important;
+}
+.dcontent {
+    left: 0px !important;
+}
+.sf-menu a {text-align: right !important;}
+.hdfont {
+    font-size: large !important;
+}
+.mega-menu {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+}
+.mainmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.mainmenu:hover, .mainmenu *:hover {
+    color: var(--mainColor) !important;
+}
+.citizen-first {
+    font-size: 120px;
+    text-align: right;
+    line-height: 1.1;
+    color: lightgray;
+    padding-top: 60px !important;
+}
+.citizen-first strong {
+    display: block;
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 15px 0;
+}
+.btn {
+    border: 1px solid var(--mainColor) !important;
+}
+.featured {
+    width: calc(100% / (2 / 3));
+    border-right: 1px solid var(--color);
+    padding: 20px;
+}
+#services-container {
+    width: calc((100% / (1 / 3) ));
+    border-left: 1px solid var(--color);
+    padding: 30px 20px;
+}
+#all_services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.service_a, .service_f {
+    border: 1px solid var(--color);
+    border-radius: 5px;
+}
+.centermain {
+    max-width: 1100px !important;
+    width: 100% !important;
+    margin: auto !important;
+}
+.service_a {
+    /* height: 200px; */
+    width: calc(50% - 10px);
+}
+.service_f {
+    height: 100px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+}
+#all_services img {
+    border-radius: 5px;
+}
+.service_f img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+.service_a img {
+    height: 200px; 
+    width: 100%; 
+    object-fit: cover;
+}
+
+.loader {
+    border: 5px solid white; 
+    border-top: 5px solid var(--mainColor);
+    border-radius: 50%;
+    width: 60px;
+    max-width: 60px;
+    margin: auto;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+.loginform input {
+    width: 100%;
+    padding: 20px !important;
+    color: var(--color) !important;
+    margin: 30px 0 !important;
+}
+.loginform input::placeholder {
+    color: var(--color) !important;
+    font-size: 1.5rem;
+}
+#ogd_container div {
+    border: 1px solid var(--color); 
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 25px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#ogd_container div p {
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .centermain, #all_services {
+        display: block;
+        flex-wrap: nowrap;
+        /* gap: unset; */
+    }
+    .featured, #services-container {
+        width: 100%;
+    }
+    .service_a, .service_f {
+        width: 100%;
+    }
+    .service_a {
+        margin: 20px 0;
+        display: block !important;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
